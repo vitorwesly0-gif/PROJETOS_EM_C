@@ -11,14 +11,11 @@ typedef struct {
     float densidade;
     double pib_per_capita;
 } Carta;
-
-/* Descarta o que sobrou na linha de entrada */
 static void limpar_buffer(void) {
     int c;
     while ((c = getchar()) != '\n' && c != EOF) {}
 }
 
-/* Lê um inteiro; se a entrada não for número, descarta e pede de novo */
 static int ler_int(const char *msg) {
     int v;
     printf("%s", msg);
@@ -130,7 +127,6 @@ static double valor_atributo(const Carta *c, int op) {
     }
 }
 
-/* Mostra o menu (omitindo a opção já usada, se houver) e devolve uma opção válida */
 static int escolher_atributo(int ja_usada) {
     int op;
     for (;;) {
@@ -149,8 +145,6 @@ static int escolher_atributo(int ja_usada) {
     }
 }
 
-/* Compara um atributo, imprime o vencedor e acumula as somas.
-   Densidade populacional: MENOR valor vence. Os demais: MAIOR vence. */
 static void comparar(int op, const Carta *c1, const Carta *c2,
                      double *soma1, double *soma2) {
     double v1 = valor_atributo(c1, op);

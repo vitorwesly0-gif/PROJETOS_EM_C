@@ -1,6 +1,4 @@
 #include <stdio.h>
-//recursividade torre, bispo, rainha
-//torre
 void torre(int n) {
     if (n > 0) {
         printf("DIREITA\n");
@@ -14,7 +12,6 @@ void bispo(int n) {
         bispo(n - 1);
     }
 }
-//rainha
 void rainha(int n) {
     if (n > 0) {
         printf("ESQUERDA\n");
@@ -34,7 +31,7 @@ int main() {
     printf("\n------------------\n");
     printf("Movimentos do Cavalo:\n");
 
-//loop complexo cavalo
+
     for(int i =0; i < 2; i++) {
         printf("CIMA\n");
         if (i == 1) {
