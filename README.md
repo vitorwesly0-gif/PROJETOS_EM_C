@@ -127,7 +127,7 @@ Estrutura do Código
 
 Este projeto é um programa didático escrito em C que simula a direção dos movimentos de quatro peças clássicas de xadrez no terminal. O código é um excelente exemplo prático para o estudo de recursividade (funções que chamam a si próprias) e estruturas de repetição (loops).
 
-📝 Descrição
+Descrição
 O programa define uma quantidade padrão de casas (n = 5) e imprime os passos que cada peça daria numa determinada direção. Em vez de utilizar um tabuleiro virtual complexo, o foco deste código está na lógica de repetição e no controlo de fluxo.
 
 Peças e Movimentos
