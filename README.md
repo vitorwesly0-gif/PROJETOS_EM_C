@@ -4,11 +4,11 @@ A PASTA POSSUI TRÊS ARQUIVOS COM CÓDIGOS EM C.
 
 Este projeto é uma implementação em terminal do clássico jogo de cartas **Super Trunfo**, focado em dados demográficos e geográficos de cidades. O programa permite que o utilizador registe duas cartas, calcule métricas automaticamente e escolha atributos para colocá-las em duelo.
 
-## 📝 Descrição
+Descrição
 
 O jogo foi desenvolvido na linguagem C e destaca-se por um sistema robusto de leitura e validação de dados, impedindo que o utilizador insira letras em campos numéricos ou valores negativos. Após o registo de duas cartas, o jogador escolhe dois atributos distintos para comparar. O vencedor final é decidido com base na soma dos valores desses atributos.
 
-## ✨ Funcionalidades
+Funcionalidades
 
 * **Cadastro Completo:** Permite inserir dados como Estado, Código da Carta, Nome da Cidade, População, Área, PIB e Número de Pontos Turísticos.
 * **Cálculo Automático:** O sistema calcula automaticamente a **Densidade Populacional** (População / Área) e o **PIB *per capita*** (PIB / População).
@@ -17,7 +17,7 @@ O jogo foi desenvolvido na linguagem C e destaca-se por um sistema robusto de le
 * **Lógica de Super Trunfo Autêntica:** Para a maioria dos atributos, o maior valor vence. No entanto, se o atributo escolhido for a *Densidade Populacional*, a carta com o **menor** valor sai vitoriosa.
 * **Resultado Final:** Soma os valores dos dois atributos escolhidos em cada carta e declara o grande vencedor.
 
-## 🚀 Como Compilar e Executar
+Como Compilar e Executar
 
 Certifique-se de que tem um compilador de C (como o GCC) instalado no seu sistema.
 
@@ -39,7 +39,7 @@ gcc super_trunfo.c -o super_trunfo
 
 *(No Windows, utilize `super_trunfo.exe`)*
 
-## 🎮 Como Jogar
+Como Jogar
 
 1. **Registo da Carta 1:** Siga as instruções no ecrã para introduzir os dados da primeira cidade.
 2. **Registo da Carta 2:** Introduza os dados da cidade adversária.
@@ -47,7 +47,7 @@ gcc super_trunfo.c -o super_trunfo
 4. **Segundo Duelo:** Escolha um novo atributo (diferente do primeiro).
 5. **Veredicto:** O programa exibirá quem venceu cada rodada individual e, no final, mostrará a soma dos atributos e a Carta Campeã.
 
-## 🧠 Estrutura Técnica do Código
+Estrutura Técnica do Código
 
 * `struct Carta`: Estrutura de dados que centraliza todas as informações de uma cidade.
 
@@ -57,7 +57,7 @@ gcc super_trunfo.c -o super_trunfo
 
 Este projeto consiste num programa simples escrito na linguagem C que inicializa e desenha na consola um tabuleiro clássico do jogo Batalha Naval.
 
-## 📝 Descrição
+Descrição
 
 O código demonstra a utilização de matrizes (arrays bidimensionais) e ciclos de repetição para formatar uma grelha no terminal. O tabuleiro tem uma dimensão de 10x10, contendo letras (A-J) para identificar as colunas e números (1-10) para identificar as linhas.
 
@@ -66,12 +66,12 @@ Neste exemplo estático, a água é representada pelo número `0` e os navios s�
 * Um navio na horizontal (tamanho 3).
 * Um navio na vertical (tamanho 3).
 
-## 🛠️ Tecnologias Utilizadas
+Tecnologias Utilizadas
 
 * **Linguagem:** C
 * **Biblioteca Padrão:** `<stdio.h>` (para entrada e saída de dados na consola)
 
-## 🚀 Como Compilar e Executar
+Como Compilar e Executar
 
 Para correr este código no seu computador, precisará de um compilador de C (como o GCC). Siga estes passos no seu terminal:
 
@@ -94,7 +94,7 @@ gcc batalha_naval.c -o batalha_naval
 
 *(Nota: Se estiver a utilizar o Windows, a execução pode ser feita apenas digitando `batalha_naval.exe` ou `.\batalha_naval.exe` no terminal).*
 
-## 💻 Exemplo de Saída (Output)
+Exemplo de Saída (Output)
 
 Ao executar o programa, a seguinte grelha será exibida no ecrã:
 
@@ -114,7 +114,7 @@ Tabuleiro de Batalha Naval:
 
 ```
 
-## 🧠 Estrutura do Código
+Estrutura do Código
 
 * `char linha[10]`: Um vetor que armazena os cabeçalhos das colunas (Letras de A a J).
 * `int tabuleiro[10][10]`: A matriz principal que guarda o estado de cada coordenada do mapa.
@@ -130,16 +130,16 @@ Este projeto é um programa didático escrito em C que simula a direção dos mo
 📝 Descrição
 O programa define uma quantidade padrão de casas (n = 5) e imprime os passos que cada peça daria numa determinada direção. Em vez de utilizar um tabuleiro virtual complexo, o foco deste código está na lógica de repetição e no controlo de fluxo.
 
-♟️ Peças e Movimentos
-🏰 Torre: Utiliza uma função recursiva para se mover 5 casas contínuas para a DIREITA.
+Peças e Movimentos
+Torre: Utiliza uma função recursiva para se mover 5 casas contínuas para a DIREITA.
 
-♗ Bispo: Utiliza uma função recursiva para se mover 5 casas contínuas na diagonal CimaDireita.
+Bispo: Utiliza uma função recursiva para se mover 5 casas contínuas na diagonal CimaDireita.
 
-♕ Rainha: Utiliza uma função recursiva para se mover 5 casas contínuas para a ESQUERDA.
+Rainha: Utiliza uma função recursiva para se mover 5 casas contínuas para a ESQUERDA.
 
-♘ Cavalo: Utiliza um ciclo for com uma condição if embutida para realizar o seu clássico movimento em "L": duas casas para CIMA e uma para a DIREITA no final.
+Cavalo: Utiliza um ciclo for com uma condição if embutida para realizar o seu clássico movimento em "L": duas casas para CIMA e uma para a DIREITA no final.
 
-🚀 Como Compilar e Executar
+Como Compilar e Executar
 Certifique-se de que tem um compilador de C (como o GCC) instalado.
 
 Guarde o código num ficheiro chamado xadrez.c.
@@ -156,7 +156,7 @@ Bash
 ./xadrez
 (No Windows, utilize xadrez.exe)
 
-💻 Exemplo de Saída (Output)
+Exemplo de Saída (Output)
 Ao executar o programa, verá o seguinte resultado na sua consola:
 
 Plaintext
@@ -188,7 +188,7 @@ Movimentos do Cavalo:
 CIMA
 CIMA
 DIREITA
-🧠 Conceitos Técnicos Aplicados
+Conceitos Técnicos Aplicados
 Para estudantes de Engenharia de Software, este código demonstra dois paradigmas importantes:
 
 Recursão (torre, bispo, rainha): A função executa uma ação e chama-se a si mesma com um valor decrementado (n - 1), parando apenas quando a condição base (n > 0) deixa de ser verdadeira.
